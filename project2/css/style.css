@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    background-color: skyblue;
+    border: 10px solid black;
+    min-height: 100vh;
+}
+
+.content{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}
+
+h4{
+    margin-top: 8px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    
+   
+}
+
+
+.about-section{
+    margin-top: 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#para{
+    margin-top: 30px;
+    text-transform: uppercase;
+    border: 5px solid black;
+    padding: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+
+.biographysection{
+    margin-top: 30px;
+}
+
+.biographysection h3{
+    font-size: 1.5rem;
+}
+
+.biographysection ul{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+footer{
+    
+    padding: 10px;
+    
+    text-align: right;
+    
+}
+
+
+@media (max-width: 768px){
+    .top-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img{
+        width: 200px;
+        height: 200px;
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+}
+
+
+/* ---------- GLOBAL RESPONSIVE FIXES ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#para {
+    word-wrap: break-word;
+}
+
+/* ---------- MOBILE PHONES ---------- */
+@media (max-width: 480px) {
+
+    .container {
+        border-width: 5px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .image-container img {
+        width: 160px;
+        height: 160px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .about-section {
+        font-size: 1rem;
+    }
+
+    #para {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .biographysection h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* ---------- TABLETS ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        border-width: 8px;
+    }
+
+    .image-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #para {
+        font-size: 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* ---------- LAPTOPS ---------- */
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .content {
+        max-width: 850px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #para {
+        font-size: 1.05rem;
+    }
+}
+
+/* ---------- LARGE SCREENS ---------- */
+@media (min-width: 1201px) {
+
+    .content {
+        max-width: 1000px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #para {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
